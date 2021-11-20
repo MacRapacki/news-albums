@@ -37,7 +37,7 @@ const AddCommentSection: React.FC<AddCommentSectionProps> = ({ id }) => {
         placeholder="Here you can add your comment..."
         onChange={(e) => setCommentText(e.target.value)}
       />
-      <AddBtn onclick={() => postComment()} />
+      <AddBtn onclick={postComment} />
     </S.CommentsWrapper>
   );
 };

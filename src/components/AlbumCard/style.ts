@@ -31,6 +31,7 @@ export const MainImgWrapper = styled.div`
   overflow: hidden;
   display: grid;
   place-items: center;
+  border-radius: 8px;
   img {
     width: 100%;
   }
@@ -41,6 +42,7 @@ export const CardTitle = styled.h3`
   line-height: 21px;
   letter-spacing: 0.2;
   text-align: center;
+  max-width: 90%;
 
   @media (min-width: 768px) {
     font-size: 18px;

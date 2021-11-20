@@ -1,12 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-// import Girloy from "./utilis/fonts/Gilroy-Light.woff";
-
 export const GlobalStyle = createGlobalStyle`
-
-
-
-
 *,html {
     margin: 0;
     padding: 0;

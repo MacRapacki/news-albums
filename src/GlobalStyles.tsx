@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     width: 100%; 
-    background-color: #E5E5E5;
+    background-color: #F4F6F9;
   }
 
   button {

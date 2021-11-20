@@ -1,4 +1,7 @@
 import React from "react";
+
+import Logo from "../Logo/Logo";
+
 import * as S from "./style";
 
 interface NavBarProps {}
@@ -6,7 +9,8 @@ interface NavBarProps {}
 const NavBar: React.FC<NavBarProps> = () => {
   return (
     <S.Navbar>
-      <S.NavLinks to="/">News</S.NavLinks>
+      <Logo />
+      <S.NavLinks to="/news">News</S.NavLinks>
       <S.NavLinks to="/albums">Albums</S.NavLinks>
     </S.Navbar>
   );

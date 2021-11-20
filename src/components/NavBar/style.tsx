@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const Navbar = styled.div`
+  position: relative;
   width: 100%;
   height: 56px;
   position: fixed;
@@ -23,6 +24,15 @@ export const Navbar = styled.div`
     height: 24px;
     transform: translate(-50%, -50%);
     background-color: #f0f2f5;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    position: relative;
+    margin-bottom: 41px;
   }
 `;
 
@@ -37,6 +47,13 @@ export const NavLinks = styled(NavLink)`
   font-weight: 700;
   color: black;
   border-bottom: 2px solid transparent;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+  }
 
   &.active {
     border-bottom: 2px solid #466bc9;

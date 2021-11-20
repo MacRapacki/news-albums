@@ -1,8 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 
+import NavBar from "./components/NavBar/NavBar";
 import News from "./pages/News/News";
 import Albums from "./pages/Albums/Albums";
-import NavBar from "./components/NavBar/NavBar";
+import NewsDetails from "./pages/NewsDetails/NewsDetails";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <NavBar />
       <Routes>
         {" "}
-        <Route path="/" element={<News />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/news/:id" element={<NewsDetails />} />
         <Route path="/albums" element={<Albums />} />
       </Routes>
     </div>

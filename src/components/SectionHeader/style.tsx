@@ -7,6 +7,10 @@ export const Header = styled.header`
   place-items: center;
   background-color: white;
   margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
 
 export const HeaderTitle = styled.h1`

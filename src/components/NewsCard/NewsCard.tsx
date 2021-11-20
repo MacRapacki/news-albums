@@ -1,4 +1,7 @@
+import NewsCardAdditional from "../NewsCardAdditional/NewsCardAdditional";
+
 import * as S from "./style";
+
 interface NewsCardProps {}
 
 const NewsCard: React.FC<NewsCardProps> = () => {
@@ -15,6 +18,7 @@ const NewsCard: React.FC<NewsCardProps> = () => {
         Inventore praes
       </S.Subtitle>
       <S.LinkToPost to="/">{">"}</S.LinkToPost>
+      <NewsCardAdditional />
     </S.Card>
   );
 };

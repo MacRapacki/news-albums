@@ -3,13 +3,15 @@ import LikesCommentsCounter from "../LikesCommentsCounter/LikesCommentsCounter";
 
 import { Wrapper } from "./style";
 
-interface NewsCardAdditionalProps {}
+interface NewsCardAdditionalProps {
+  id: number;
+}
 
-const NewsCardAdditional: React.FC<NewsCardAdditionalProps> = () => {
+const NewsCardAdditional: React.FC<NewsCardAdditionalProps> = ({ id }) => {
   return (
     <Wrapper>
       <LikesCommentsCounter />
-      <ReadMOreBtn />
+      <ReadMOreBtn id={id} />
     </Wrapper>
   );
 };

@@ -1,5 +1,7 @@
 import * as S from "./style";
 
+import ArrowIcon from "../../utilis/images/arrow.svg";
+
 import LikesCommentsCounter from "../LikesCommentsCounter/LikesCommentsCounter";
 
 interface NewsDetailsCardProps {}
@@ -24,6 +26,10 @@ const NewsDetailsCard: React.FC<NewsDetailsCardProps> = () => {
         consectetur ipsum praesentium cumque facere, expedita laborum et nemo
         ipsa aliquid? Veniam, at!{" "}
       </S.Content>
+      <S.ReturnLink to="/news">
+        <img src={ArrowIcon} alt="Arrow Icon" />
+        <span>Back</span>
+      </S.ReturnLink>
     </S.Card>
   );
 };

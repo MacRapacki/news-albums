@@ -18,7 +18,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ id, title, body }) => {
       <S.LinkToPost to={`/news/${id}`}>
         <img src={ArrowIcon} alt="Arrow Icon" />
       </S.LinkToPost>
-      <NewsCardAdditional />
+      <NewsCardAdditional id={id} />
     </S.Card>
   );
 };

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Card = styled.div`
   position: relative;
@@ -82,5 +83,37 @@ export const AddedInfo = styled.div`
   span {
     color: #a0abb2;
     margin-right: 2px;
+  }
+`;
+
+export const ReturnLink = styled(Link)`
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #f4f6f9;
+  display: none;
+  place-items: center;
+  position: absolute;
+  left: 70px;
+
+  img {
+    transform: rotate(180deg);
+  }
+
+  span {
+    position: absolute;
+    left: 100%;
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+  }
+
+  @media (min-width: 768px) {
+    display: grid;
+  }
+
+  @media (min-width: 1200px) {
+    left: 111px;
   }
 `;

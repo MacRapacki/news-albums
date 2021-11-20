@@ -31,7 +31,6 @@ const News: React.FC<NewsProps> = () => {
   return (
     <S.Wrapper>
       <SectionHeader text="News list" />
-
       {posts?.map((post, index) => {
         const { id, title, body } = post;
         return <NewsCard key={index} id={id} title={title} body={body} />;

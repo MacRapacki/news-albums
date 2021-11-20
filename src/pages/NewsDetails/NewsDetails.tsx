@@ -45,7 +45,6 @@ const NewsDetails: React.FC<NewsDetailsProps> = () => {
     getComments().then((data) => setComments(data));
   }, []);
 
-  console.log(comments);
   return (
     <S.Wrapper>
       <SectionHeader text="News Details" />

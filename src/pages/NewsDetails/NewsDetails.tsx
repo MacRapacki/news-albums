@@ -14,11 +14,14 @@ const NewsDetails: React.FC<NewsDetailsProps> = () => {
       <SectionHeader text="News Details" />
       <GoBackBtn>{"<"}</GoBackBtn>
       <NewsDetailsCard />
-      <AddCommentSection />
-      <Comment />
-      <Comment />
-      <Comment />
-      <Comment />
+      <S.Overlay>
+        {" "}
+        <AddCommentSection />
+        <Comment />
+        <Comment />
+        <Comment />
+        <Comment />
+      </S.Overlay>
     </S.Wrapper>
   );
 };

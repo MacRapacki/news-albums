@@ -1,12 +1,15 @@
 import * as S from "./style";
 
-interface AlbumCardProps {}
+interface AlbumCardProps {
+  id: number;
+  title: string;
+}
 
-const AlbumCard: React.FC<AlbumCardProps> = () => {
+const AlbumCard: React.FC<AlbumCardProps> = ({ id, title }) => {
   return (
     <S.Card>
       <S.MainImg alt="albums main picture" />
-      <S.CardTitle>tytuł</S.CardTitle>
+      <S.CardTitle>{title}</S.CardTitle>
     </S.Card>
   );
 };

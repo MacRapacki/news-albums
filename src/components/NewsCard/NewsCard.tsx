@@ -1,23 +1,23 @@
 import NewsCardAdditional from "../NewsCardAdditional/NewsCardAdditional";
 
+import ArrowIcon from "../../utilis/images/arrow.svg";
+
 import * as S from "./style";
 
-interface NewsCardProps {}
+interface NewsCardProps {
+  id: number;
+  title: string;
+  body: string;
+}
 
-const NewsCard: React.FC<NewsCardProps> = () => {
+const NewsCard: React.FC<NewsCardProps> = ({ id, title, body }) => {
   return (
     <S.Card>
-      <S.Title>
-        {" "}
-        Kręte hiszpańskie asfalty kolejnym wyzwaniem Huttunena i Lukki
-      </S.Title>
-      <S.Subtitle>
-        {" "}
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum error
-        quos unde. Asperiores expedita rerum dolorum accusamus tempore!
-        Inventore praes
-      </S.Subtitle>
-      <S.LinkToPost to="/">{">"}</S.LinkToPost>
+      <S.Title>{title}</S.Title>
+      <S.Subtitle>{body}</S.Subtitle>
+      <S.LinkToPost to={`/news/${id}`}>
+        <img src={ArrowIcon} alt="Arrow Icon" />
+      </S.LinkToPost>
       <NewsCardAdditional />
     </S.Card>
   );

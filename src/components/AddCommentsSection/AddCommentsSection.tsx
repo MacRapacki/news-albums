@@ -1,10 +1,13 @@
+// import { useState, useEffect } from "react";
 import AddBtn from "../buttons/AddBtn/AddBtn";
 
 import * as S from "./style";
 
-interface AddCommentSectionProps {}
+interface AddCommentSectionProps {
+  id: number;
+}
 
-const AddCommentSection: React.FC<AddCommentSectionProps> = () => {
+const AddCommentSection: React.FC<AddCommentSectionProps> = ({ id }) => {
   return (
     <S.CommentsWrapper>
       <S.CommentsTitle>Comments</S.CommentsTitle>

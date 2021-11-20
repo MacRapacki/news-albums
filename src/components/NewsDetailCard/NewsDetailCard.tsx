@@ -4,13 +4,18 @@ import ArrowIcon from "../../utilis/images/arrow.svg";
 
 import LikesCommentsCounter from "../LikesCommentsCounter/LikesCommentsCounter";
 
-interface NewsDetailsCardProps {}
+interface NewsDetailsCardProps {
+  post: {
+    title: string;
+    body: string;
+  };
+}
 
-const NewsDetailsCard: React.FC<NewsDetailsCardProps> = () => {
+const NewsDetailsCard: React.FC<NewsDetailsCardProps> = ({ post }) => {
   return (
     <S.Card>
       <S.CardHeader>News details</S.CardHeader>
-      <S.Title>asd asd asd asd </S.Title>
+      <S.Title>{post.title} </S.Title>
       <S.LIkesAndDateWrapper>
         {" "}
         <LikesCommentsCounter />
@@ -19,13 +24,7 @@ const NewsDetailsCard: React.FC<NewsDetailsCardProps> = () => {
         </S.AddedInfo>
       </S.LIkesAndDateWrapper>
 
-      <S.Content>
-        {" "}
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, vero
-        facilis, aspernatur dolor distinctio nesciunt mollitia recusandae
-        consectetur ipsum praesentium cumque facere, expedita laborum et nemo
-        ipsa aliquid? Veniam, at!{" "}
-      </S.Content>
+      <S.Content>{post.body}</S.Content>
       <S.ReturnLink to="/news">
         <img src={ArrowIcon} alt="Arrow Icon" />
         <span>Back</span>

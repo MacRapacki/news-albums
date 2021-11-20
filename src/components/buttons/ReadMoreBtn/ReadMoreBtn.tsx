@@ -9,8 +9,8 @@ interface ReadMOreBtnProps {
 const ReadMOreBtn: React.FC<ReadMOreBtnProps> = ({ id }) => {
   return (
     <S.Wrapper>
-      <S.Info>Read more</S.Info>
       <S.ArrowRight to={`/news/${id}`}>
+        <S.Info>Read more</S.Info>
         <img src={Arrow} alt="Arrow Icon" />
       </S.ArrowRight>{" "}
     </S.Wrapper>

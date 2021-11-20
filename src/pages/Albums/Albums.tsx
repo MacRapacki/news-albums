@@ -21,7 +21,7 @@ const Albums: React.FC<AlbumsProps> = () => {
     }
   };
 
-  console.log(fetchedAlbums);
+  // console.log(fetchedAlbums);
 
   useEffect(() => {
     fetchAlbums().then((data: []) => setFetchedAlbums(data));

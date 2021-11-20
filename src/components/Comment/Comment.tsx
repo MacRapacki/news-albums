@@ -1,18 +1,15 @@
 import * as S from "./style";
 
-interface CommentProps {}
+interface CommentProps {
+  name: string;
+  body: string;
+}
 
-const Comment: React.FC<CommentProps> = () => {
+const Comment: React.FC<CommentProps> = ({ name, body }) => {
   return (
     <S.CommentWrapper>
-      <S.CommentAuthor>kiemon</S.CommentAuthor>
-      <S.CommentContent>
-        {" "}
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In natus nulla
-        quaerat, perspiciatis, eius placeat cumque qui explicabo est expedita
-        corporis alias eveniet molestiae laborum facilis repellat magni iure
-        beatae.{" "}
-      </S.CommentContent>
+      <S.CommentAuthor>{name}</S.CommentAuthor>
+      <S.CommentContent>{body}</S.CommentContent>
       <S.AddInfo>12 min ago</S.AddInfo>
     </S.CommentWrapper>
   );

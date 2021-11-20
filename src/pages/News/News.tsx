@@ -22,7 +22,7 @@ const News: React.FC<NewsProps> = () => {
     }
   };
 
-  console.log(posts);
+  // console.log(posts);
 
   useEffect(() => {
     fetchPosts().then((data: []) => setPosts(data));

@@ -15,7 +15,7 @@ export const CommentWrapper = styled.div`
   @media (min-width: 768px) {
     width: 488px;
     background-color: #f7f9fd;
-    margin: 0 0 8px 0;
+    margin: 4px 0 8px 0;
   }
 
   @media (min-width: 1200px) {

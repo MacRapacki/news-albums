@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
 `;
 
 export const ArrowRight = styled(Link)`
+  position: relative;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -20,9 +21,13 @@ export const ArrowRight = styled(Link)`
 `;
 
 export const Info = styled.p`
+  position: absolute;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0.2px;
   margin-right: 8px;
-  color: #466bc9; ;
+  color: #466bc9;
+  right: 100%;
+  width: 80px;
+  text-align: right;
 `;

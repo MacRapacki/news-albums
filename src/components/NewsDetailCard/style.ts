@@ -58,6 +58,7 @@ export const CardHeader = styled.p`
   letter-spacing: 0.2px;
   text-align: center;
   margin-bottom: 41px;
+  font-weight: bold;
   display: none;
 
   @media (min-width: 768px) {

@@ -11,6 +11,7 @@ export const Card = styled.div`
   align-items: center;
   padding: 32px 24px 40px 24px;
   margin-bottom: 40px;
+  box-shadow: 0px 8px 32px rgba(59, 75, 165, 0.08);
 
   @media (min-width: 768px) {
     width: 628px;
@@ -65,8 +66,12 @@ export const CardHeader = styled.p`
 
 export const LIkesAndDateWrapper = styled.div`
   width: 100%;
-  display: flex;
+  display: none;
   margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 `;
 
 export const AddedInfo = styled.div`

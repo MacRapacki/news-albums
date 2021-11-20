@@ -12,6 +12,7 @@ export const BackBtn = styled(Link)`
   display: grid;
   place-items: center;
   text-decoration: none;
+  transform: rotate(180deg);
 
   @media (min-width: 768px) {
     display: none;

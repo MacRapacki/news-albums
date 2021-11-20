@@ -13,4 +13,9 @@ export const AddCommentBtn = styled.button`
   text-align: center;
   border: none;
   margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    width: 158px;
+    height: 40px;
+  }
 `;

@@ -13,6 +13,7 @@ const Comment: React.FC<CommentProps> = () => {
         corporis alias eveniet molestiae laborum facilis repellat magni iure
         beatae.{" "}
       </S.CommentContent>
+      <S.AddInfo>12 min ago</S.AddInfo>
     </S.CommentWrapper>
   );
 };

@@ -17,10 +17,12 @@ const NewsDetails: React.FC<NewsDetailsProps> = () => {
       <S.Overlay>
         {" "}
         <AddCommentSection />
-        <Comment />
-        <Comment />
-        <Comment />
-        <Comment />
+        <S.CommentOverlay>
+          <Comment />
+          <Comment />
+          <Comment />
+          <Comment />
+        </S.CommentOverlay>
       </S.Overlay>
     </S.Wrapper>
   );

@@ -9,7 +9,7 @@ const NewsCard: React.FC<NewsCardProps> = () => {
     <S.Card>
       <S.Title>
         {" "}
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Kręte hiszpańskie asfalty kolejnym wyzwaniem Huttunena i Lukki
       </S.Title>
       <S.Subtitle>
         {" "}

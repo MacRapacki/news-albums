@@ -8,6 +8,7 @@ export const Card = styled.div`
   background-color: white;
   padding: 24px;
   margin: 0 5px 8px 5px;
+  box-shadow: 0px 8px 32px rgba(59, 75, 165, 0.08);
 
   @media (min-width: 768px) {
     margin: 0 10px 16px 10px;
@@ -38,6 +39,10 @@ export const Title = styled.h2`
 
   @media (min-width: 1200px) {
     max-width: 410px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
   }
 `;
 

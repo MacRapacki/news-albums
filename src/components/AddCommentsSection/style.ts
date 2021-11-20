@@ -19,6 +19,14 @@ export const CommentsTitle = styled.label`
   padding-left: 8px;
   max-width: 328px;
   color: #586976;
+
+  @media (min-width: 768px) {
+    width: 628px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
 `;
 
 export const CommentInput = styled.textarea`
@@ -32,4 +40,18 @@ export const CommentInput = styled.textarea`
   letter-spacing: 0.2px;
   border: none;
   resize: none;
+
+  @media (min-width: 768px) {
+    width: 488px;
+    background-color: #f7f9fd;
+    margin-bottom: 16px;
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 868px;
+    height: 80px;
+  }
 `;

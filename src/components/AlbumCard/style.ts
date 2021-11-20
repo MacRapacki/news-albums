@@ -9,6 +9,7 @@ export const Card = styled.div`
   overflow: hidden;
   cursor: pointer;
   margin: 0 8px 8px 8px;
+  box-shadow: 0px 10.1px 25.25px rgba(240, 242, 245, 0.5);
 
   @media (min-width: 768px) {
     height: 198px;

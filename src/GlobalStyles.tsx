@@ -1,24 +1,17 @@
 import { createGlobalStyle } from "styled-components";
 
+// import Girloy from "./utilis/fonts/Gilroy-Light.woff";
+
 export const GlobalStyle = createGlobalStyle`
 
-/* @font-face {
-  font-family: "Gilroy";
-  src: url("./utilis/fonts/Gilroy-Light.otf");
-}
 
-@font-face {
-  font-family: "Gilroy";
-  src: url("./utilis/fonts/Gilroy-ExtraBold.otf");
-  font-weight: 700;
-} */
 
 
 *,html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Gilroy" ,
+    font-family: 'Gilroy' , sans-serif
 }
 
 

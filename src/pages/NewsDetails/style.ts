@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   position: relative;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -13,6 +14,7 @@ export const Wrapper = styled.div`
 export const Overlay = styled.div`
   background-color: transparent;
   border-radius: 16px;
+
   @media (min-width: 768px) {
     background: #ffffff;
     box-shadow: 0px 8px 32px rgba(59, 75, 165, 0.08);
@@ -25,4 +27,11 @@ export const Overlay = styled.div`
     width: 1090px;
     padding: 35px 111px;
   }
+`;
+
+export const CommentOverlay = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;

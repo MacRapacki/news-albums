@@ -9,7 +9,7 @@ export const Card = styled.div`
   background-color: white;
   overflow: hidden;
   cursor: pointer;
-  margin: 0 8px 8px 8px;
+  margin: 0 4px 8px 4px;
   box-shadow: 0px 10.1px 25.25px rgba(240, 242, 245, 0.5);
   display: flex;
   flex-direction: column;

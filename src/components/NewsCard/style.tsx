@@ -9,6 +9,9 @@ export const Card = styled.div`
   padding: 24px;
   margin: 0 5px 8px 5px;
   box-shadow: 0px 8px 32px rgba(59, 75, 165, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
   @media (min-width: 768px) {
     margin: 0 10px 16px 10px;
@@ -19,6 +22,7 @@ export const Card = styled.div`
 
   @media (min-width: 1200px) {
     width: 535px;
+    height: 232px;
     border-radius: 16px;
     padding: 32px;
   }

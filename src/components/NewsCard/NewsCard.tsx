@@ -14,7 +14,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ id, title, body }) => {
   return (
     <S.Card>
       <S.Title>{title}</S.Title>
-      <S.Subtitle>{body.substring(0, 150)}...</S.Subtitle>
+      <S.Subtitle>{body.substring(0, 100)}...</S.Subtitle>
       <S.LinkToPost to={`/news/${id}`}>
         <img src={ArrowIcon} alt="Arrow Icon" />
       </S.LinkToPost>

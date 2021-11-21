@@ -12,6 +12,7 @@ function App() {
       <NavBar />
       <Routes>
         {" "}
+        <Route path="/" element={<News />} />
         <Route path="/news" element={<News />} />
         <Route path="/news/:id" element={<NewsDetails />} />
         <Route path="/albums" element={<Albums />} />

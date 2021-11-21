@@ -19,7 +19,6 @@ export const Card = styled.div`
   }
 
   @media (min-width: 768px) {
-    /* justify-content: space-between; */
     margin: 0 10px 16px 10px;
     width: 435px;
     border-radius: 16px;

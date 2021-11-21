@@ -4,20 +4,15 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import { GlobalStyle } from "./GlobalStyles";
-import { ThemeProvider } from "styled-components";
-// import { theme } from "./utilis/theme/theme";
 
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    {" "}
-    {/* <ThemeProvider theme={theme}> */}
-    <BrowserRouter>
+    <HashRouter basename="/">
       <GlobalStyle />
       <App />
-    </BrowserRouter>
-    {/* </ThemeProvider> */}
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

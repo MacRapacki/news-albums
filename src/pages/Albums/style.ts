@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin: 0 auto;
 `;
 
 export const CardsWrapper = styled.div`

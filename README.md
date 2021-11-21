@@ -1,4 +1,4 @@
-#News and Albums
+# News and Albums
 This project has been created as part of a recruitment process.
 
 # Getting Started with Create React App

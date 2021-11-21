@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import AddBtn from "../buttons/AddBtn/AddBtn";
 
 import * as S from "./style";

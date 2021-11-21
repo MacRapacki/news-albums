@@ -12,12 +12,19 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  min-height: 150px;
+
+  @media (min-width: 690px) {
+    height: 189px;
+  }
 
   @media (min-width: 768px) {
+    /* justify-content: space-between; */
     margin: 0 10px 16px 10px;
     width: 435px;
     border-radius: 16px;
-    padding: 32px;
+    padding: 24px;
+    height: 199px;
   }
 
   @media (min-width: 1200px) {
@@ -60,11 +67,12 @@ export const Subtitle = styled.p`
 
   @media (min-width: 768px) {
     max-width: 330px;
-    margin-bottom: 27px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: 1200px) {
     max-width: 471px;
+    margin-bottom: 27px;
   }
 `;
 

@@ -8,6 +8,7 @@ export const CommentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
   padding: 24px;
   margin: 0 25px 8px 25px;
   border: 1px solid #dee7f7;
@@ -54,11 +55,12 @@ export const AddInfo = styled.p`
   text-align: right;
   color: #979797;
   width: 100%;
-  right: 0;
-  bottom: 0;
+  height: 100%;
   display: none;
 
   @media (min-width: 768px) {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
 `;

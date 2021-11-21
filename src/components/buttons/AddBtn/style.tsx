@@ -13,9 +13,28 @@ export const AddCommentBtn = styled.button`
   text-align: center;
   border: none;
   margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: 768px) {
     width: 158px;
     height: 40px;
+  }
+`;
+
+export const SmallDeviceText = styled.span`
+  display: block;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+`;
+
+export const BigDeviceText = styled.span`
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: block;
   }
 `;

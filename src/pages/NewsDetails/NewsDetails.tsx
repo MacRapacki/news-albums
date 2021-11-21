@@ -15,7 +15,7 @@ const NewsDetails: React.FC = () => {
     <S.Wrapper>
       <SectionHeader text="News Details" />
       <GoBackBtn>{"<"}</GoBackBtn>
-      <NewsDetailsCard post={{ title: post.title, body: post.body }} />
+      <NewsDetailsCard post={{ title: post?.title, body: post?.body }} />
       <S.Overlay>
         {" "}
         <AddCommentSection id={postId} />

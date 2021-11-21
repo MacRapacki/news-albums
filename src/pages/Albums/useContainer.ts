@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
 
+interface FetchedAlbumsTypes {
+  id: number;
+  title: string;
+  userId: number;
+}
+
 export const useContainer = () => {
-  const [fetchedAlbums, setFetchedAlbums] = useState<any[]>([]);
+  const [fetchedAlbums, setFetchedAlbums] = useState<FetchedAlbumsTypes[]>([]);
 
   const fetchAlbums = async () => {
     const url = "https://jsonplaceholder.typicode.com/albums";

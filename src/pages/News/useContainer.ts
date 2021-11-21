@@ -1,7 +1,14 @@
 import { useState, useEffect } from "react";
 
+interface PostsTypes {
+  id: number;
+  title: string;
+  userId: number;
+  body: string;
+}
+
 export const useContainer = () => {
-  const [posts, setPosts] = useState<any[]>([]);
+  const [posts, setPosts] = useState<PostsTypes[]>([]);
 
   const fetchPosts = async () => {
     const url = "https://jsonplaceholder.typicode.com/posts";

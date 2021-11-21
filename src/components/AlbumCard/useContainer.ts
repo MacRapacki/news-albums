@@ -4,8 +4,16 @@ interface UseContainerProps {
   id: number;
 }
 
+interface PhotosProps {
+  albumId: number;
+  id: number;
+  thumbnailUrl: string;
+  title: string;
+  url: string;
+}
+
 export const useContainer = ({ id }: UseContainerProps) => {
-  const [photos, setPhotos] = useState<any[]>([]);
+  const [photos, setPhotos] = useState<PhotosProps[]>([]);
 
   const fetchPhotos = async () => {
     const url = `https://jsonplaceholder.typicode.com/photos?albumId=${id}`;

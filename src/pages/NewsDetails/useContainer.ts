@@ -2,9 +2,25 @@ import { useState, useEffect } from "react";
 
 import { useMatch } from "react-router-dom";
 
+export interface CommentsTypes {
+  body: string;
+  email: string;
+  id: number;
+  name: string;
+  postId: number;
+}
+
+export interface PostTypes {
+  id: number;
+  title: string;
+  userId: number;
+  body: string;
+}
+
 export const useContainer = () => {
   const [post, setPost] = useState<any>({});
-  const [comments, setComments] = useState<any>([]);
+  const [comments, setComments] = useState<CommentsTypes[]>([]);
+  console.log(post);
 
   let match = useMatch("/news/:id");
   const postId = Number(match?.params.id);

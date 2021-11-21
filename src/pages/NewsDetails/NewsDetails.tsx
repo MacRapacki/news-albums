@@ -6,11 +6,9 @@ import NewsDetailsCard from "../../components/NewsDetailCard/NewsDetailCard";
 import AddCommentSection from "../../components/AddCommentsSection/AddCommentsSection";
 import Comment from "../../components/Comment/Comment";
 
-import { useContainer } from "./useContainer";
+import { useContainer, CommentsTypes } from "./useContainer";
 
-interface NewsDetailsProps {}
-
-const NewsDetails: React.FC<NewsDetailsProps> = () => {
+const NewsDetails: React.FC = () => {
   const { post, comments, postId } = useContainer();
 
   return (
@@ -22,7 +20,7 @@ const NewsDetails: React.FC<NewsDetailsProps> = () => {
         {" "}
         <AddCommentSection id={postId} />
         <S.CommentOverlay>
-          {comments?.map((item: any, index: number) => {
+          {comments?.map((item: CommentsTypes, index: number) => {
             const { body, name } = item;
             return <Comment key={index} body={body} name={name} />;
           })}

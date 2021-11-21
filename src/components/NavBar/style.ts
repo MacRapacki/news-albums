@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-interface Props {
-  test?: string;
-}
-
 export const Navbar = styled.div`
   position: relative;
   width: 100%;
@@ -40,7 +36,7 @@ export const Navbar = styled.div`
   }
 `;
 
-export const NavLinks = styled(NavLink)<Props>`
+export const NavLinks = styled(NavLink)`
   width: 100%;
   height: 100%;
   display: flex;

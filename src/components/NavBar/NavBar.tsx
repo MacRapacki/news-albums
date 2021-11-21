@@ -14,7 +14,7 @@ const NavBar: React.FC<NavBarProps> = () => {
   return (
     <S.Navbar>
       <Logo />
-      <S.NavLinks to="/news" test="kek" className={location ? "active" : ""}>
+      <S.NavLinks to="/news" className={location ? "active" : ""}>
         News
       </S.NavLinks>
       <S.NavLinks to="/albums">Albums</S.NavLinks>

@@ -18,7 +18,7 @@ If You want to build the app for production type `npm run build` in the terminal
 - remove 'any' types from the project
 - add theme provider for better style management
 - put interfaces to separate file
-- move sensitive data e.g. api url to .env
+- move sensitive data e.g. api url to .env file
 - create custom hook to fetch data (DRY)
 
 

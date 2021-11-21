@@ -17,6 +17,7 @@ If You want Build the app for production type `npm run build` in the terminal.
 - add redux or context for state management
 - remove 'any' types from the project
 - add theme provider for better style management
+- put interfaces to separate file
 
 
 

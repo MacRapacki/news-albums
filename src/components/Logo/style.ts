@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const LogoImg = styled.img`
+export const LogoWrapper = styled(Link)`
   width: 86px;
   height: 16px;
   position: absolute;

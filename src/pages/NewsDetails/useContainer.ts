@@ -18,12 +18,7 @@ export interface PostTypes {
 }
 
 export const useContainer = () => {
-  const [post, setPost] = useState<PostTypes>({
-    id: 2,
-    title: "",
-    userId: 2,
-    body: "",
-  });
+  const [post, setPost] = useState<PostTypes>(Object);
   const [comments, setComments] = useState<CommentsTypes[]>([]);
 
   let match = useMatch("/news/:id");

@@ -13,10 +13,12 @@ const Albums: React.FC<AlbumsProps> = () => {
   return (
     <S.Wrapper>
       <SectionHeader text="Albums" />
-      {fetchedAlbums?.map((album, index) => {
-        const { id, title } = album;
-        return <AlbumCard key={index} id={id} title={title} />;
-      })}
+      <S.CardsWrapper>
+        {fetchedAlbums?.map((album, index) => {
+          const { id, title } = album;
+          return <AlbumCard key={index} id={id} title={title} />;
+        })}
+      </S.CardsWrapper>
     </S.Wrapper>
   );
 };

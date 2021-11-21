@@ -4,10 +4,9 @@ export const Card = styled.div`
   position: relative;
   height: 139px;
   width: 160px;
-  left: 16px;
   border-radius: 8px;
   background-color: white;
-  overflow: hidden;
+  /* overflow: hidden; */
   cursor: pointer;
   margin: 0 4px 8px 4px;
   box-shadow: 0px 10.1px 25.25px rgba(240, 242, 245, 0.5);

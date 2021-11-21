@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/news-albums/static/js/main.4d0d35c1.chunk.js",
-    "main.js.map": "/news-albums/static/js/main.4d0d35c1.chunk.js.map",
+    "main.js": "/news-albums/static/js/main.855b9265.chunk.js",
+    "main.js.map": "/news-albums/static/js/main.855b9265.chunk.js.map",
     "runtime-main.js": "/news-albums/static/js/runtime-main.2a0f1bc5.js",
     "runtime-main.js.map": "/news-albums/static/js/runtime-main.2a0f1bc5.js.map",
-    "static/js/2.a2be9e2d.chunk.js": "/news-albums/static/js/2.a2be9e2d.chunk.js",
-    "static/js/2.a2be9e2d.chunk.js.map": "/news-albums/static/js/2.a2be9e2d.chunk.js.map",
+    "static/js/2.501a2e1c.chunk.js": "/news-albums/static/js/2.501a2e1c.chunk.js",
+    "static/js/2.501a2e1c.chunk.js.map": "/news-albums/static/js/2.501a2e1c.chunk.js.map",
     "static/js/3.a0c2a92c.chunk.js": "/news-albums/static/js/3.a0c2a92c.chunk.js",
     "static/js/3.a0c2a92c.chunk.js.map": "/news-albums/static/js/3.a0c2a92c.chunk.js.map",
     "index.html": "/news-albums/index.html",
-    "static/js/2.a2be9e2d.chunk.js.LICENSE.txt": "/news-albums/static/js/2.a2be9e2d.chunk.js.LICENSE.txt",
+    "static/js/2.501a2e1c.chunk.js.LICENSE.txt": "/news-albums/static/js/2.501a2e1c.chunk.js.LICENSE.txt",
     "static/media/LogoBisons.cb4da32d.svg": "/news-albums/static/media/LogoBisons.cb4da32d.svg",
     "static/media/arrow.8667d5fb.svg": "/news-albums/static/media/arrow.8667d5fb.svg",
     "static/media/comment.a327c830.svg": "/news-albums/static/media/comment.a327c830.svg",
@@ -17,7 +17,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2a0f1bc5.js",
-    "static/js/2.a2be9e2d.chunk.js",
-    "static/js/main.4d0d35c1.chunk.js"
+    "static/js/2.501a2e1c.chunk.js",
+    "static/js/main.855b9265.chunk.js"
   ]
 }
